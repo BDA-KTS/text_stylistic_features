@@ -26,10 +26,10 @@ The method writes output to a CSV file, i.e., `data/output_posts_with_entities.c
 
 | Posts | tokens | ttr | rttr | cttr | herdan | maas | profanity_count |	profanity_cleaned_text |	flesch_reading_ease |	text_standard |	reading_time |	syllable_count |	sentence_count |	char_count |	polysyllable_count |	get_monosyllable_count |	num_of_choruses |	rhyme_scheme |	sentiment_polarity |
 |----|-----|------|-----|-----|------|-------|-------|---------|----------|------------|----------|--------|-------|--------|-------|--------|--------|----------|-----------|
-| The moon doesn’t answer, but it listens better than most.	| 10	| 1.0	| 3.162277660168379	2.23606797749979	1.0	0.0	0	The moon doesn’t answer, but it listens better than most.	78.24500000000002	3rd and 4th grade	0.70512	14	1	48	0	6	0	A	positive
-I left my thoughts in yesterday’s rain.	7	1.0	2.6457513110645903	1.8708286933869707	1.0	0.0	0	I left my thoughts in yesterday’s rain.	90.95857142857145	8th and 9th grade	0.48477	9	1	33	1	6	0	A	neutral
-Some silences speak louder than storms.	6	1.0	2.4494897427831783	1.7320508075688774	1.0	0.0	0	Some silences speak louder than storms.	73.84500000000001	8th and 9th grade	0.49945999999999996	9	1	34	1	4	0	A	neutral
-The stars look different when you’re missing someone.	8	1.0	2.82842712474619	2.0	1.0	0.0	0	The stars look different when you’re missing someone.	71.81500000000001	8th and 9th grade	0.67574	12	1	46	1	5	0	A	negative
+| The moon doesn’t answer, but it listens better than most.	| 10	| 1.0	| 3.16	| 2.24	| 1.0	| 0.0	| 0	| The moon doesn’t answer, but it listens better than most.	| 78.25	| 3rd and 4th grade	| 0.71	| 14	| 1	| 48	| 0	| 6	| 0	| A	| positive |
+| I left my thoughts in yesterday’s rain.	| 7	| 1.0	| 2.65	| 1.87	| 1.0	| 0.0	| 0	| I left my thoughts in yesterday’s rain.	| 90.96	| 8th and 9th grade	| 0.48	| 9	| 1	| 33	| 1	| 6	| 0	| A	| neutral |
+| Some silences speak louder than storms.	| 6	| 1.0	| 2.45	| 1.73	| 1.0	| 0.0	| 0	| Some silences speak louder than storms.	| 73.85	| 8th and 9th grade	| 0.5	| 9	| 1	| 34	| 1	| 4	| 0	| A	| neutral |
+| The stars look different when you’re missing someone.	| 8	| 1.0	| 2.83	| 2.0	| 1.0	| 0.0	| 0	| The stars look different when you’re missing someone.	| 71.82	| 8th and 9th grade	| 0.68	| 12	| 1	| 46	| 1	| 5	| 0	| A	| negative |
 |...|
 
 
@@ -58,7 +58,8 @@ For assessing **lexical richness**, we employ the **LexicalRichness** package ([
 The method builds on Omar Chouikha's original work for his thesis [https://github.com/bolandka/writing-style-lyrics](https://github.com/bolandka/writing-style-lyrics).
 
 ## Contact
-For more information, please contact <katarina.boland@hhu.de>
+For more information, please contact <omcho100@uni-duesseldorf.de>
+
 
 
 
