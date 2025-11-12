@@ -2,12 +2,13 @@
 
 ## Description
 
-This stylistic feature extraction method analyzes the way text is written rather than what is written. It identifies linguistic and structural patterns across multiple categories, e.g., lexical features (tokens, type-token-ratio, root-type-token-ratio, corrected-type-token-ratio, herdan, and maas), profanity features (profanity word count, text without profanity),  readability (flesch_reading_ease, text_standard, reading_time, syllable_count, sentence_count, char_count, polysyllable_count, get_monosyllable_count), # repetitiveness (num_of_choruses), rhyme (rhyme_scheme), and sentiment analysis (sentiment_polarity). These features capture the author's writing style, tone and expressiveness. By quantifying the stylistic features, the method provides insights into the underlying communication style beyong the content itself.
+This stylistic feature extraction method analyzes the stylistic patterns in text instead of the content itself. It identifies linguistic and structural patterns across multiple categories, e.g., lexical features (tokens, type-token-ratio, root-type-token-ratio, corrected-type-token-ratio, herdan, and maas), profanity features (profanity word count, text without profanity),  readability (flesch_reading_ease, text_standard, reading_time, syllable_count, sentence_count, char_count, polysyllable_count, get_monosyllable_count), repetitiveness (num_of_choruses), rhyme (rhyme_scheme), and sentiment analysis (sentiment_polarity). These features capture the author's writing style, or gene's tone and expressiveness. It quantifies the stylistic features for insights into the underlying communication style and their comparisons.
 
 ## Use Cases
 
-- The content writters are needed to be grouped based on their writing skills using stylistic features of their written samples. 
-- Educational and editorial systems want to evaluate whether a piece of writing match the desired readability and tone criteria e.g., formal academic writings or simplifying public-face documents.
+- Group content writers based on their stylistic properties
+- Evaluate whether an article meet the desired readability and tone criteria e.g., formal writing in academia
+- Analyzing the appropriateness of the tone and language of policy documents for public understanding
 
 ## Input Data
 
@@ -61,6 +62,7 @@ The method builds on Omar Chouikha's original work for his thesis [https://githu
 
 ## Contact
 For more information, please contact <omcho100@uni-duesseldorf.de>
+
 
 
 
