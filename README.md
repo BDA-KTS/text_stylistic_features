@@ -2,7 +2,7 @@
 
 ## Description
 
-This stylistic feature extraction method analyzes the way text is written rather than what is written. It identifies linguistic and structural patterns across multiple categories, e.g., lexical features (tokens, ttr, rttr, cttr, herdan, and maas), profanity features (profanity word count, text without profanity),  readability (flesch_reading_ease, text_standard, reading_time, syllable_count, sentence_count, char_count, polysyllable_count, get_monosyllable_count), # repetitiveness (num_of_choruses), rhyme (rhyme_scheme), and sentiment analysis (sentiment_polarity). These features capture the author's writing style, tone and expressiveness. By quantifying the stylistic features, the method provides insights into the underlying communication style beyong the content itself.
+This stylistic feature extraction method analyzes the way text is written rather than what is written. It identifies linguistic and structural patterns across multiple categories, e.g., lexical features (tokens, type-token-ratio, root-type-token-ratio, corrected-type-token-ratio, herdan, and maas), profanity features (profanity word count, text without profanity),  readability (flesch_reading_ease, text_standard, reading_time, syllable_count, sentence_count, char_count, polysyllable_count, get_monosyllable_count), # repetitiveness (num_of_choruses), rhyme (rhyme_scheme), and sentiment analysis (sentiment_polarity). These features capture the author's writing style, tone and expressiveness. By quantifying the stylistic features, the method provides insights into the underlying communication style beyong the content itself.
 
 ## Use Cases
 
@@ -39,18 +39,23 @@ The method runs on a small virtual machine provided by a cloud computing company
 
 ## Environment Setup
 
-The method is tested with Python 3.10 and should work with other Python versions as well. Use the following command to setup the virtual working environment by installing all dependencies;
+use the following envrionment to deploy the virtual working environment. It deploys Python=3.10 as part of the dependencies.
 
-  ```pip install -r requirements.txt```
+  ```conda env create -f environment.yml```
 
 ## How to Use
 
-- Open `index.ipynb` and execute the cells to use the method. It imports and uses the entity extraction function defined in `entity_extractor.py`.
-- Populate the input file `data/input_social_posts.csv` with social media posts on the topic of interest, keeping one per row (Optional: the file already has sample posts). 
+- The script ```main.py``` calls all the feature extraction functions defined ```features_util/```. It reads the input data ```data/input_posts.tsv``` and writes the output as the original posts with stylistic features in separate columns in file ```stylistic_features_enriched_posts.tsv```. You can execute the script using the following command from the project main directory.
+
+- ```paython main.py```  
+
+- Populate the input file `data/input_posts.tsv` with social media posts on the topic of interest, keeping one per row (Optional: the file already has sample posts). 
 
 ## Technical Details
 
-## References
+For assessing **lexical richness**, we employ the **LexicalRichness** package ([https://lexicalrichness.readthedocs.io/en/latest/](https://lexicalrichness.readthedocs.io/en/latest/)), which provides quantitative measures of vocabulary diversity in a text, such as the Type–Token Ratio (TTR), Root TTR, herdan, and maas. These metrics capture how varied and sophisticated the vocabulary is, helping evaluate writing quality, vocabulary knowledge, or linguistic competence. For **readability features**, we use **TextStat** ([https://pypi.org/project/textstat/](https://pypi.org/project/textstat/)), which computes indices like the Flesch Reading Ease and reading time. For **sentiment analysis**, we rely on **VADER Sentiment** ([https://pypi.org/project/vaderSentiment/](https://pypi.org/project/vaderSentiment/)). For **profanity detection**, we integrate **Better Profanity** ([https://pypi.org/project/better-profanity/](https://pypi.org/project/better-profanity/)), a lightweight and fast Python library for identifying and censoring offensive language. While the rhyme features are identified through regular expressions.
+
 
 ## Contact
+For more information, please contact <katarina.boland@hhu.de>
 
