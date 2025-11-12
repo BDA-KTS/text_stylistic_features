@@ -39,9 +39,11 @@ The method runs on a small virtual machine provided by a cloud computing company
 
 ## Environment Setup
 
-use the following envrionment to deploy the virtual working environment. It deploys Python=3.10 as part of the dependencies.
+Use the following commands to deploy the working environment and download necessary data.
 
   ```conda env create -f environment.yml```
+
+  ```python -m spacy download en_core_web_sm```
 
 ## How to Use
 
@@ -59,6 +61,7 @@ The method builds on Omar Chouikha's original work for his thesis [https://githu
 
 ## Contact
 For more information, please contact <omcho100@uni-duesseldorf.de>
+
 
 
 
