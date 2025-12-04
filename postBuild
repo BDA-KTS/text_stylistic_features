@@ -1,4 +1,3 @@
-
 #!/usr/bin/env -S bash -v
 
 # determine which version of Quarto to install
