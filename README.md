@@ -46,11 +46,11 @@ The method runs on a small virtual machine provided by a cloud computing company
 
 ## Environment Setup
 
-Use the following commands to deploy the working environment and download necessary data.
+In case of local setup, execute (1.) and (2.) commands, given below, for setting up the working environment and downloading the necessary library. On interactive execution, the virtual environment is already setup and only require executing (2.) command for downloading the library. 
 
-  ```conda env create -f environment.yml```
+1. ```conda env create -f environment.yml```
 
-  ```python -m spacy download en_core_web_sm```
+2.  ```python -m spacy download en_core_web_sm```
 
 ## How to Use
 
@@ -71,6 +71,7 @@ The method builds on Omar Chouikha's original work for his thesis [https://githu
 ## Contact
 
 For more information, please contact <taimoor.khan@gesis.org>
+
 
 
 
