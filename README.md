@@ -2,7 +2,13 @@
 
 ## Description
 
-This stylistic feature extraction method analyzes the stylistic patterns in text instead of the content itself. It identifies linguistic and structural patterns across multiple categories, e.g., lexical features (tokens, type-token-ratio, root-type-token-ratio, corrected-type-token-ratio, herdan, and maas), profanity features (profanity word count, text without profanity),  readability (flesch_reading_ease, text_standard, reading_time, syllable_count, sentence_count, char_count, polysyllable_count, get_monosyllable_count), repetitiveness (num_of_choruses), rhyme (rhyme_scheme), and sentiment analysis (sentiment_polarity). These features capture the author's writing style, or gene's tone and expressiveness. It quantifies the stylistic features for insights into the underlying communication style and their comparisons.
+The method analyzes stylistic patterns in the text, instead of the content itself. It identifies a number of linguistic and structural patterns in multiple categories (listed below). These features capture the author's writing style, tone and expressiveness. The extracted features are quantified for insights into the underlying communication style and comparisons across styles.
+
+- Lexical features (tokens, type-token-ratio, root-type-token-ratio, corrected-type-token-ratio, herdan, and maas)
+- Profanity features (profanity word count, text without profanity)
+- Readability (flesch_reading_ease, text_standard, reading_time, syllable_count, sentence_count, char_count, polysyllable_count, get_monosyllable_count)
+- Repetitiveness (num_of_choruses), rhyme (rhyme_scheme)
+- Sentiment analysis (sentiment_polarity) 
 
 ## Use Cases
 
@@ -65,6 +71,7 @@ The method builds on Omar Chouikha's original work for his thesis [https://githu
 ## Contact
 
 For more information, please contact <taimoor.khan@gesis.org>
+
 
 
 
